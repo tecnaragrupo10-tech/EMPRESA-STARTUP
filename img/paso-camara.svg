@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110">
+  <rect width="160" height="110" rx="12" fill="#2E8B3A"/>
+  <!-- campo de visión -->
+  <polygon points="74,40 150,78 150,104 96,104" fill="#FFFFFF" opacity="0.14"/>
+  <!-- trozo de campo -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6">
+    <path d="M96 104 L150 104"/>
+    <circle cx="132" cy="104" r="14"/>
+  </g>
+  <!-- poste -->
+  <rect x="26" y="34" width="7" height="72" rx="2" fill="#FFFFFF"/>
+  <rect x="18" y="100" width="23" height="6" rx="2" fill="#FFFFFF"/>
+  <!-- cámara IP -->
+  <g transform="rotate(18 52 34)">
+    <rect x="22" y="22" width="52" height="24" rx="7" fill="#FFFFFF"/>
+    <rect x="70" y="26" width="12" height="16" rx="3" fill="#FFFFFF"/>
+    <circle cx="78" cy="34" r="5" fill="#111111"/>
+    <circle cx="78" cy="34" r="2" fill="#2E8B3A"/>
+    <circle cx="32" cy="34" r="3" fill="#2E8B3A"/>
+  </g>
+  <!-- REC -->
+  <rect x="104" y="10" width="46" height="18" rx="9" fill="#111111"/>
+  <circle cx="115" cy="19" r="4" fill="#2E8B3A"/>
+  <text x="122" y="23" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">REC</text>
+</svg>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GolClip · Grabación y resúmenes de partidos para fútbol regional</title>
+  <meta name="description" content="Grabación automática de partidos, resúmenes de 2 minutos por jugador y estadísticas para clubes de categoría regional. Tarifa plana de 99 €/mes por equipo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    /* Oculta el inicio hasta que arranca la animación de entrada.
+       Si el JS falla, a los 3 s se muestra igualmente. */
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('pre');
+      setTimeout(function () { document.documentElement.classList.remove('pre'); }, 3000);
+    }
+  </script>
+  <script src="js/animaciones.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="#inicio">Gol<span>Clip</span></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Inicio ===== -->
+    <section id="inicio" class="hero">
+
+      <!-- Palabra gigante de fondo: aparece letra a letra -->
+      <!-- Dos copias idénticas: la pista se desplaza un 50 % y vuelve a empezar sin corte -->
+      <div class="palabra" aria-hidden="true">
+        <div class="palabra__pista">
+          <span class="palabra__grupo"><span>G</span><span>O</span><span>L</span><span>C</span><span>L</span><span>I</span><span>P</span></span>
+          <span class="palabra__grupo"><span>G</span><span>O</span><span>L</span><span>C</span><span>L</span><span>I</span><span>P</span></span>
+        </div>
+      </div>
+
+      <div class="contenedor hero__rejilla">
+        <div class="hero__texto">
+          <h1 class="mascara"><span class="mascara__in">Su partido, grabado. <em>Sus mejores jugadas, en 2 minutos.</em></span></h1>
+          <p class="mascara"><span class="mascara__in">Grabación automática de partidos, resúmenes por jugador y estadísticas para clubes de categoría regional. Con una tarifa plana de 99 €/mes por equipo.</span></p>
+          <div class="botones">
+            <a class="boton" href="#servicios">Ver servicios</a>
+            <a class="boton boton--secundario" href="#contacto">Contactar</a>
+          </div>
+        </div>
+
+        <!-- Escena: el campo gira en 3D como una cámara que pasa de vista aérea a vista de grada -->
+        <div class="escena" role="img" aria-label="Campo de fútbol grabado desde la grada, con mapa de calor de un jugador y su resumen de 2 minutos en el móvil">
+          <div class="escena__giro">
+            <div class="escena__camara">
+              <img class="escena__campo" src="img/campo.svg" width="350" height="230" alt="">
+            </div>
+          </div>
+          <span class="escena__rec">REC</span>
+          <img class="escena__movil" src="img/movil.svg" width="164" height="254" alt="">
+        </div>
+      </div>
+
+      <!-- Cifras 01–04 al pie del inicio -->
+      <ol class="contenedor cifras">
+        <li class="cifra"><div class="cifra__in"><span class="cifra__num">01</span><span class="cifra__txt">Grabación<br>automática</span></div></li>
+        <li class="cifra"><div class="cifra__in"><span class="cifra__num">02</span><span class="cifra__txt">Resumen<br>de 2 minutos</span></div></li>
+        <li class="cifra"><div class="cifra__in"><span class="cifra__num">03</span><span class="cifra__txt">Estadísticas<br>por jugador</span></div></li>
+        <li class="cifra"><div class="cifra__in"><span class="cifra__num">04</span><span class="cifra__txt">99 €/mes<br>por equipo</span></div></li>
+      </ol>
+    </section>
+
+    <!-- ===== Servicios ===== -->
+    <section id="servicios" class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Servicios</h2>
+        <p class="seccion__intro">Al terminar cada partido, el jugador recibe su resumen en el móvil y el club accede a la grabación completa y a las estadísticas de su plantilla.</p>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h3>Resumen automático</h3>
+            <p>Vídeo de 2 minutos por jugador con sus mejores jugadas. Listo para compartir en redes o enviar a ojeadores.</p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Partido completo</h3>
+            <p>Grabación íntegra del partido, disponible para el cuerpo técnico.</p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Estadísticas por jugador</h3>
+            <ul class="lista-datos">
+              <li>Mapa de calor</li>
+              <li>Minutos jugados</li>
+              <li>Pases completados/intentados</li>
+              <li>Regates completados/intentados</li>
+              <li>Tiros a puerta</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="precios">
+          <div class="precio">
+            <span class="precio__cifra">99 €/mes</span>
+            <span class="precio__detalle">Tarifa plana por equipo. Incluye los tres servicios.</span>
+          </div>
+          <div class="precio">
+            <span class="precio__cifra">3,99 €</span>
+            <span class="precio__detalle">Por vídeo extra, a elección del jugador.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Proyectos ===== -->
+    <section id="proyectos" class="seccion seccion--gris">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Proyectos</h2>
+        <p class="seccion__intro">El estado real de cada proyecto.</p>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <span class="estado estado--marcha">En marcha</span>
+            <h3>Piloto con un equipo regional</h3>
+            <p>Grabamos los partidos en casa de un club de Regional Preferente durante la primera vuelta. Probamos los resúmenes con 20 jugadores reales.</p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="estado estado--beta">Beta</span>
+            <h3>Plataforma web para clubes</h3>
+            <p>El entrenador consulta el partido completo, las estadísticas y los mapas de calor de su plantilla.</p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="estado estado--desarrollo">En desarrollo</span>
+            <h3>Web app para jugadores</h3>
+            <p>PWA instalable en el móvil. Cada jugador recibe su resumen y lo comparte en redes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Equipo ===== -->
+    <section id="equipo" class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Equipo</h2>
+
+        <div class="rejilla rejilla--2">
+          <a class="tarjeta miembro" href="equipo/danny-sanchez.html">
+            <div class="miembro__cabecera">
+              <!-- [FOTO] Sustituir las iniciales por la foto de Danny -->
+              <div class="foto foto--miembro" aria-hidden="true">DS</div>
+              <span class="dorsal dorsal--peq" aria-hidden="true">01</span>
+            </div>
+            <h3>Danny Sánchez</h3>
+            <span class="rol">Backend y Frontend</span>
+            <p>Desarrolla la plataforma web para clubes y la PWA para jugadores.</p>
+            <span class="miembro__ver">Ver ficha →</span>
+          </a>
+
+          <a class="tarjeta miembro" href="equipo/jose-ondo.html">
+            <div class="miembro__cabecera">
+              <!-- [FOTO] Sustituir las iniciales por la foto de Jose -->
+              <div class="foto foto--miembro" aria-hidden="true">JO</div>
+              <span class="dorsal dorsal--peq" aria-hidden="true">02</span>
+            </div>
+            <h3>Jose Ondo</h3>
+            <span class="rol">Responsable de Operaciones Técnicas</span>
+            <p>Configura y mantiene las cámaras y la conectividad en los campos.</p>
+            <span class="miembro__ver">Ver ficha →</span>
+          </a>
+        </div>
+
+        <p class="socio">El montaje físico de las cámaras lo realiza una empresa instaladora asociada, bajo la supervisión de Jose Ondo.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section id="contacto" class="seccion seccion--gris">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Contacto</h2>
+        <p class="seccion__intro">¿Quiere grabar los partidos de su equipo? Contacte con nosotros y le explicamos cómo funciona la instalación en su campo.</p>
+
+        <div class="contacto-datos">
+          <div class="tarjeta">
+            <h3>Email</h3>
+            <a href="mailto:golclip@gmail.com">golclip@gmail.com</a>
+          </div>
+          <div class="tarjeta">
+            <h3>Teléfono</h3>
+            <a href="tel:+34638837422">638 83 74 22</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">GolClip · © 2026</div>
+  </footer>
+
+</body>
+</html>

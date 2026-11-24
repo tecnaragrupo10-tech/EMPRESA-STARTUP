@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110">
+  <rect width="160" height="110" rx="12" fill="#2E8B3A"/>
+  <!-- ondas de señal -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round">
+    <path d="M62 38 A 26 26 0 0 1 98 38" opacity="0.95"/>
+    <path d="M50 28 A 42 42 0 0 1 110 28" opacity="0.65"/>
+    <path d="M38 18 A 58 58 0 0 1 122 18" opacity="0.35"/>
+  </g>
+  <!-- router -->
+  <rect x="48" y="62" width="64" height="26" rx="7" fill="#FFFFFF"/>
+  <rect x="60" y="44" width="5" height="20" rx="2" fill="#FFFFFF"/>
+  <rect x="95" y="44" width="5" height="20" rx="2" fill="#FFFFFF"/>
+  <circle cx="62" cy="75" r="3" fill="#2E8B3A"/>
+  <circle cx="72" cy="75" r="3" fill="#2E8B3A"/>
+  <circle cx="82" cy="75" r="3" fill="#111111"/>
+  <rect x="90" y="73" width="14" height="4" rx="2" fill="#111111" opacity="0.5"/>
+  <!-- flecha de subida -->
+  <g stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M136 96 L136 62"/>
+    <path d="M127 71 L136 62 L145 71"/>
+  </g>
+  <g stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5">
+    <path d="M24 96 L24 62"/>
+    <path d="M15 71 L24 62 L33 71"/>
+  </g>
+</svg>

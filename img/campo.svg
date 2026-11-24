@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 230">
+  <defs>
+    <radialGradient id="calor" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clipCampo">
+      <rect width="350" height="230" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <rect width="350" height="230" rx="14" fill="#2E8B3A"/>
+  <g clip-path="url(#clipCampo)">
+    <!-- franjas de césped -->
+    <g fill="#FFFFFF" opacity="0.06">
+      <rect x="0" width="35" height="230"/>
+      <rect x="70" width="35" height="230"/>
+      <rect x="140" width="35" height="230"/>
+      <rect x="210" width="35" height="230"/>
+      <rect x="280" width="35" height="230"/>
+    </g>
+    <!-- mapa de calor -->
+    <ellipse cx="230" cy="90" rx="70" ry="50" fill="url(#calor)"/>
+    <ellipse cx="280" cy="140" rx="45" ry="38" fill="url(#calor)"/>
+    <ellipse cx="170" cy="155" rx="40" ry="30" fill="url(#calor)" opacity="0.7"/>
+  </g>
+
+  <!-- líneas -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.85">
+    <rect x="14" y="14" width="322" height="202" rx="2"/>
+    <line x1="175" y1="14" x2="175" y2="216"/>
+    <circle cx="175" cy="115" r="30"/>
+    <rect x="14" y="70" width="46" height="90"/>
+    <rect x="290" y="70" width="46" height="90"/>
+    <rect x="14" y="95" width="16" height="40"/>
+    <rect x="320" y="95" width="16" height="40"/>
+  </g>
+  <circle cx="175" cy="115" r="3" fill="#FFFFFF"/>
+
+  <!-- jugada: pase y tiro -->
+  <path d="M130 170 Q 190 130 235 90 T 325 112" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <circle cx="130" cy="170" r="7" fill="#111111" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="235" cy="90" r="7" fill="#111111" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="280" cy="145" r="7" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="210" cy="50" r="7" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="80" cy="120" r="7" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="325" cy="112" r="5" fill="#FFFFFF"/>
+</svg>

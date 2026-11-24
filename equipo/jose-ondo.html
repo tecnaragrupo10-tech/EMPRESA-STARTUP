@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Ondo · Equipo GolClip</title>
+  <meta name="description" content="Jose Ondo, Responsable de Operaciones Técnicas en GolClip.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('pre');
+      setTimeout(function () { document.documentElement.classList.remove('pre'); }, 3000);
+    }
+  </script>
+  <script src="../js/animaciones.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="../index.html#inicio">Gol<span>Clip</span></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="../index.html#inicio">Inicio</a></li>
+          <li><a href="../index.html#servicios">Servicios</a></li>
+          <li><a href="../index.html#proyectos">Proyectos</a></li>
+          <li><a href="../index.html#equipo">Equipo</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Cabecera tipo ficha de jugador -->
+    <section class="ficha-hero">
+      <div class="palabra" aria-hidden="true">
+        <div class="palabra__pista">
+          <span class="palabra__grupo"><span>J</span><span>O</span><span>S</span><span>E</span></span>
+          <span class="palabra__grupo"><span>J</span><span>O</span><span>S</span><span>E</span></span>
+        </div>
+      </div>
+
+      <div class="contenedor ficha-hero__rejilla">
+        <div>
+          <span class="dorsal" aria-hidden="true">02</span>
+          <h1 class="mascara"><span class="mascara__in">Jose Ondo</span></h1>
+          <span class="rol">Responsable de Operaciones Técnicas</span>
+          <a class="linkedin" href="https://www.linkedin.com/in/joseondo" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <!-- [FOTO] Sustituir las iniciales por la foto de Jose -->
+        <div class="foto foto--ficha" aria-hidden="true">JO</div>
+      </div>
+    </section>
+
+    <div class="contenedor ficha">
+
+      <blockquote class="cita">
+        <p>Si la cámara no graba, no hay resumen. Mi trabajo es que cada partido quede registrado de principio a fin.</p>
+      </blockquote>
+
+      <section class="ficha__bloque">
+        <h2>Qué hace en GolClip</h2>
+        <p>Configura y mantiene las cámaras y la conectividad en los campos donde grabamos.</p>
+        <p>Supervisa a la empresa instaladora asociada, que realiza el montaje físico de las cámaras.</p>
+      </section>
+
+      <section class="ficha__bloque ficha__bloque--ancho">
+        <h2>Su lugar en el proceso</h2>
+        <ol class="proceso">
+          <li class="paso paso--activo" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-camara.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">1</span>Cámara</span>
+                <span class="paso__suyo">Parte de Jose</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">1</span>
+                <strong class="paso__nombre">Cámara</strong>
+                <span class="paso__desc">Graba el partido en el campo.</span>
+                <span class="paso__suyo">Parte de Jose</span>
+              </div>
+            </div>
+          </li>
+          <li class="paso paso--activo" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-conectividad.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">2</span>Conectividad</span>
+                <span class="paso__suyo">Parte de Jose</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">2</span>
+                <strong class="paso__nombre">Conectividad</strong>
+                <span class="paso__desc">Envía la grabación desde el campo.</span>
+                <span class="paso__suyo">Parte de Jose</span>
+              </div>
+            </div>
+          </li>
+          <li class="paso" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-partido.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">3</span>Partido grabado</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">3</span>
+                <strong class="paso__nombre">Partido grabado</strong>
+                <span class="paso__desc">Partido completo, resúmenes y estadísticas.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paso" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-pantallas.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">4</span>Plataforma y PWA</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">4</span>
+                <strong class="paso__nombre">Plataforma y PWA</strong>
+                <span class="paso__desc">El club y el jugador lo ven en su pantalla.</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <p class="proceso__pista">Pulse cada tarjeta para ver el detalle.</p>
+      </section>
+
+      <section class="ficha__bloque ficha__bloque--ancho">
+        <h2>Proyectos en los que trabaja</h2>
+        <div class="rejilla rejilla--2">
+          <article class="tarjeta">
+            <span class="estado estado--marcha">En marcha</span>
+            <h3>Piloto con un equipo regional</h3>
+            <p>Grabación de los partidos en casa de un club de Regional Preferente durante la primera vuelta, con 20 jugadores. Jose se encarga de las cámaras y la conectividad en el campo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ficha__bloque">
+        <h2>Puntos fuertes</h2>
+        <ul class="etiquetas">
+          <li>Cámaras IP</li>
+          <li>Videovigilancia</li>
+          <li>Redes</li>
+          <li>Conectividad</li>
+        </ul>
+      </section>
+
+      <section class="ficha__bloque">
+        <h2>Formación</h2>
+        <ul class="lista-datos">
+          <li>Grado Superior en Sistemas de Telecomunicaciones e Informáticos</li>
+        </ul>
+      </section>
+
+      <nav class="ficha-nav" aria-label="Fichas del equipo">
+        <a class="volver" href="../index.html#equipo">← Volver al equipo</a>
+        <a class="siguiente" href="danny-sanchez.html"><span>Siguiente ficha</span>Danny Sánchez →</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">GolClip · © 2026</div>
+  </footer>
+
+</body>
+</html>

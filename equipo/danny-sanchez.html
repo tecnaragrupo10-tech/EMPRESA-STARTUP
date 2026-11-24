@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danny Sánchez · Equipo GolClip</title>
+  <meta name="description" content="Danny Sánchez, Backend y Frontend en GolClip.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script>
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('pre');
+      setTimeout(function () { document.documentElement.classList.remove('pre'); }, 3000);
+    }
+  </script>
+  <script src="../js/animaciones.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="../index.html#inicio">Gol<span>Clip</span></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="../index.html#inicio">Inicio</a></li>
+          <li><a href="../index.html#servicios">Servicios</a></li>
+          <li><a href="../index.html#proyectos">Proyectos</a></li>
+          <li><a href="../index.html#equipo">Equipo</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Cabecera tipo ficha de jugador -->
+    <section class="ficha-hero">
+      <div class="palabra" aria-hidden="true">
+        <div class="palabra__pista">
+          <span class="palabra__grupo"><span>D</span><span>A</span><span>N</span><span>N</span><span>Y</span></span>
+          <span class="palabra__grupo"><span>D</span><span>A</span><span>N</span><span>N</span><span>Y</span></span>
+        </div>
+      </div>
+
+      <div class="contenedor ficha-hero__rejilla">
+        <div>
+          <span class="dorsal" aria-hidden="true">01</span>
+          <h1 class="mascara"><span class="mascara__in">Danny Sánchez</span></h1>
+          <span class="rol">Backend y Frontend</span>
+          <a class="linkedin" href="https://www.linkedin.com/in/danny-sanchez-894342303/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <!-- [FOTO] Sustituir las iniciales por la foto de Danny -->
+        <div class="foto foto--ficha" aria-hidden="true">DS</div>
+      </div>
+    </section>
+
+    <div class="contenedor ficha">
+
+      <blockquote class="cita">
+        <p>Mi trabajo empieza cuando termina el partido: que cada jugador tenga su resumen en el móvil, listo para compartir.</p>
+      </blockquote>
+
+      <section class="ficha__bloque">
+        <h2>Qué hace en GolClip</h2>
+        <p>Desarrolla la plataforma web para clubes, donde el entrenador consulta el partido completo, las estadísticas y los mapas de calor de su plantilla.</p>
+        <p>También desarrolla la PWA para jugadores, donde cada jugador recibe su resumen de 2 minutos y lo comparte en redes.</p>
+      </section>
+
+      <section class="ficha__bloque ficha__bloque--ancho">
+        <h2>Su lugar en el proceso</h2>
+        <ol class="proceso">
+          <li class="paso" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-camara.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">1</span>Cámara</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">1</span>
+                <strong class="paso__nombre">Cámara</strong>
+                <span class="paso__desc">Graba el partido en el campo.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paso" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-conectividad.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">2</span>Conectividad</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">2</span>
+                <strong class="paso__nombre">Conectividad</strong>
+                <span class="paso__desc">Envía la grabación desde el campo.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paso" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-partido.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">3</span>Partido grabado</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">3</span>
+                <strong class="paso__nombre">Partido grabado</strong>
+                <span class="paso__desc">Partido completo, resúmenes y estadísticas.</span>
+              </div>
+            </div>
+          </li>
+          <li class="paso paso--activo" tabindex="0">
+            <div class="paso__giro">
+              <div class="paso__cara paso__cara--frente" aria-hidden="true">
+                <img class="paso__img" src="../img/paso-pantallas.svg" alt="" width="160" height="110">
+                <span class="paso__titulo"><span class="paso__num">4</span>Plataforma y PWA</span>
+                <span class="paso__suyo">Parte de Danny</span>
+              </div>
+              <div class="paso__cara paso__cara--dorso">
+                <span class="paso__num">4</span>
+                <strong class="paso__nombre">Plataforma y PWA</strong>
+                <span class="paso__desc">El club y el jugador lo ven en su pantalla.</span>
+                <span class="paso__suyo">Parte de Danny</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <p class="proceso__pista">Pulse cada tarjeta para ver el detalle.</p>
+      </section>
+
+      <section class="ficha__bloque ficha__bloque--ancho">
+        <h2>Proyectos en los que trabaja</h2>
+        <div class="rejilla rejilla--2">
+          <article class="tarjeta">
+            <span class="estado estado--beta">Beta</span>
+            <h3>Plataforma web para clubes</h3>
+            <p>El entrenador consulta el partido completo, las estadísticas y los mapas de calor de su plantilla.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="estado estado--desarrollo">En desarrollo</span>
+            <h3>Web app para jugadores</h3>
+            <p>PWA instalable en el móvil. Cada jugador recibe su resumen y lo comparte en redes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ficha__bloque">
+        <h2>Puntos fuertes</h2>
+        <ul class="etiquetas">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section class="ficha__bloque">
+        <h2>Formación</h2>
+        <ul class="lista-datos">
+          <li>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</li>
+          <li>Grado Medio en Administración de Empresas</li>
+        </ul>
+      </section>
+
+      <nav class="ficha-nav" aria-label="Fichas del equipo">
+        <a class="volver" href="../index.html#equipo">← Volver al equipo</a>
+        <a class="siguiente" href="jose-ondo.html"><span>Siguiente ficha</span>Jose Ondo →</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">GolClip · © 2026</div>
+  </footer>
+
+</body>
+</html>

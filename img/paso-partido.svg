@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110">
+  <defs>
+    <radialGradient id="calorPaso" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="160" height="110" rx="12" fill="#2E8B3A"/>
+  <!-- fotograma de vídeo -->
+  <rect x="14" y="14" width="88" height="62" rx="6" fill="#111111"/>
+  <rect x="18" y="18" width="80" height="54" rx="4" fill="#3BA349"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6">
+    <line x1="58" y1="18" x2="58" y2="72"/>
+    <circle cx="58" cy="45" r="10"/>
+  </g>
+  <ellipse cx="76" cy="36" rx="18" ry="12" fill="url(#calorPaso)"/>
+  <circle cx="58" cy="45" r="12" fill="#111111" opacity="0.8"/>
+  <polygon points="54,38 54,52 66,45" fill="#FFFFFF"/>
+  <!-- barra de progreso -->
+  <rect x="14" y="84" width="88" height="5" rx="2.5" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="14" y="84" width="40" height="5" rx="2.5" fill="#FFFFFF"/>
+  <text x="14" y="102" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">2:00</text>
+  <!-- estadísticas -->
+  <g fill="#FFFFFF">
+    <rect x="114" y="62" width="10" height="34" rx="2"/>
+    <rect x="128" y="44" width="10" height="52" rx="2"/>
+    <rect x="142" y="70" width="10" height="26" rx="2" opacity="0.7"/>
+  </g>
+  <rect x="112" y="18" width="40" height="18" rx="4" fill="#111111"/>
+  <text x="132" y="31" text-anchor="middle" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">STATS</text>
+</svg>
